@@ -3,8 +3,10 @@
 </p>
 
 <p align="center">
+
 [![LICENSE](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/dean-jordan/NANSNA-Neuromorphic-Accelerators/blob/main/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/dean-jordan/NANSNA-Neuromorphic-Accelerators)
+
 </p>
 
 NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromorphic Accelerator based on a novel Spiking Neural Network (SNN)-based architecture intended to improve multi-domain performance and specialization simultaneously.
