@@ -1,13 +1,75 @@
-# NANSNA-Neuromorphic-Accelerators
+<p align="center">
+    <img src="">
+</p>
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+<p align="center">
+[![LICENSE](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/dean-jordan/NANSNA-Neuromorphic-Accelerators/blob/main/LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/dean-jordan/NANSNA-Neuromorphic-Accelerators)
+</p>
 
-NANSNA: Neuromorphic Accelerators with Novel Spiking Neural Subnetwork Ensemble-Based Architecture
+NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromorphic Accelerator based on a novel Spiking Neural Network (SNN)-based architecture intended to improve multi-domain performance and specialization simultaneously.
 
-## Project Organization
+---
+- [About](#About)
+- [Quickstart](#quickstart)
+- [NANSNA Source](#nansna-source)
+    - [Neurons](#neurons)
+    - [Loss](#loss)
+    - [Layers](#layers)
+    - [Encoder](#encoder)
+    - [Decoder](#decoder)
+    - [Subnetwork](#subnetwork)
+    - [Testing](#testing)
+    - [Adapters](#adapters)
+- [Models](#models)
+- [Documentation](#documentation)
+- [Notebooks](#notebooks)
+- [Reports](#reports)
+- [References](#references)
+- [Training](#training)
+- [Dependencies](#dependencies)
+- [Directory Structure](#directory-structure)
+---
 
+### About
+
+### Quickstart
+
+### NANSNA Source
+
+#### Activation
+
+#### Neurons
+
+#### Loss
+
+#### Layers
+
+#### Encoder
+
+#### Decoder
+
+#### Subnetwork
+
+#### Testing
+
+#### Adapters
+
+### Models
+
+### Documentation
+
+### Notebooks
+
+### Reports
+
+### References
+
+### Training
+
+### Dependencies
+
+### Directory Structure
 ```
 ├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
