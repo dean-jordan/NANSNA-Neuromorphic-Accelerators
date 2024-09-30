@@ -18,3 +18,10 @@ import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
+
+class SoftmaxActivation(nn.Module):
+    def __init__(self):
+        super(SoftmaxActivation, self).__init__()
+
+    def forward(self, x):
+        return torch.exp(x) / sum(torch.exp(x))
