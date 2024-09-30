@@ -9,6 +9,8 @@
 
 </p>
 
+<h3 align="center">NANSNA: Neuromorphic Accelerators with Novel Spiking Neural Subnetwork Ensemble-Based Architecture</h3>
+
 NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromorphic Accelerator based on a novel Spiking Neural Network (SNN)-based architecture intended to improve multi-domain performance and specialization simultaneously.
 
 ---
