@@ -18,3 +18,7 @@ import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
+
+class EncoderBlock(nn.Module):
+    def __init__(self):
+        super(EncoderBlock, self).__init__()

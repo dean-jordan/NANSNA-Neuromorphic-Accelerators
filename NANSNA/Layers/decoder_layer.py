@@ -18,7 +18,3 @@ import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
-
-class SubnetworkEnsemble(nn.Module):
-    def __init__(self):
-        super(SubnetworkEnsemble, self).__init__()

@@ -29,3 +29,7 @@ from Adapters import adapters
 class NANSNA(nn.Module):
     def __init__(self):
         super(NANSNA, self).__init__()
+
+        self.encoder = encoder.EncoderBlock()
+        self.decoder = decoder.DecoderBlock()
+        self.subnetwork = subnetwork_ensemble.SubnetworkEnsemble()

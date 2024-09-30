@@ -18,3 +18,7 @@ import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
+
+class LayerModule(nn.Module):
+    def __init__(self):
+        super(LayerModule, self).__init__()
