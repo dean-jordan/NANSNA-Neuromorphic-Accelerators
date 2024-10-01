@@ -37,6 +37,10 @@ The resulting architecture, while significantly improving the specialization and
 
 As such, this report proposes a novel SNN architecture, model, and neuromorphic accelerator intended to provide state of the art performance in multi-domain learning while improving the synaptic density and efficiency of neuromorphic accelerators. The architecture, NANSNA, is based on an encoder-decoder structure with a multi-head attention mechanism, positional encoding mechanism, and recurrent network on both the encoder and decoder. In between the encoder and decoder, a subnetwork ensemble based on residual connections is used. The subnetwork ensemble, unlike the encoder and decoder, is spiking and uses an adapter-based training method in order to achieve parameter efficiency. Each subnetwork within the subnetwork ensemble utilizes a single adapter to allow for multiple adapters to be utilized simultaneously, allowing for multi-domain performance to occur while maintaining specialization and efficiency. Finally, the recurrent network within the encoder utilizes neurosymbolic programming primitives in order to dynamically load adapters according to the input received. Thus, the NANSNA model utilizes multimodality, allowing for the model and architecture to perform competitively to current state of the art ANNs.
 
+\section*{Background}
+
+Neuromorphic computing 
+
 \section*{Results}
 
 Up to three levels of \textbf{subheading} are permitted. Subheadings should not be numbered.
