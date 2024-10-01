@@ -17,7 +17,7 @@
 %\keywords{Keyword1, Keyword2, Keyword3}
 
 \begin{abstract}
-As a field, neuromorphic computing is expected to nearly double annually until 2032 and have an expected valuation of \$9.5 trillion USD. However, current implementations of neuromorphic accelerators contains models which are not large enough for Vision and Language (VaL) tasks and are relatively incapable of multi-domain learning due to the specialization of current Spiking Neural Network (SNN) architectures. As a result, the NANSNA architecture aims to improve the efficiency of SNNs by developing a novel encoder/decoder-based SNN architecture which utilizes a neural subnetwork ensemble. The architecture contains multiple novel neuron and layer types for increasing efficiency, specialization, and multi-domain learning. The NANSNA model is trained on an adapter-based approach. Each subnetwork in the subnetwork ensemble is assigned a single adapter. This allows for specialization to occur while simultaneously increasing the performance of multi-domain tasks. The NANSNA model and architecture demonstrate statistically significant improvement in several key metrics within neuromorphic computing, including Synaptic Operations per Second (SOPS), synaptic density, Neuromorphic MNIST (N-MNIST), and the cost per neuron.
+As a field, neuromorphic computing is expected to nearly double annually until 2032 and have an expected valuation of \$9.5 trillion USD. However, current implementations of neuromorphic accelerators contains models which are not large enough for Vision and Language (VaL) tasks and are relatively incapable of multi-domain learning due to the specialization of current Spiking Neural Network (SNN) architectures. As a result, the NANSNA architecture aims to improve the efficiency of SNNs by developing a novel encoder/decoder-based SNN architecture which utilizes a neural subnetwork ensemble. The architecture contains multiple novel neuron and layer types within the central subnetwork for increasing efficiency, specialization, and multi-domain learning. Additional efficiency improvements occur due to the encoder and decoder being non-spiking. The NANSNA model is trained on an adapter-based approach. Each subnetwork in the subnetwork ensemble is assigned a single adapter. This allows for specialization to occur while simultaneously increasing the performance of multi-domain tasks. The NANSNA model and architecture demonstrate statistically significant improvement in several key metrics within neuromorphic computing, including Synaptic Operations per Second (SOPS), synaptic density, Neuromorphic MNIST (N-MNIST), and the cost per neuron.
 \end{abstract}
 \begin{document}
 
@@ -29,11 +29,10 @@ As a field, neuromorphic computing is expected to nearly double annually until 2
 %
 \thispagestyle{empty}
 
-\noindent Please note: Abbreviations should be introduced at the first mention in the main text – no abbreviations lists. Suggested structure of main text (not enforced) is provided below.
-
 \section*{Introduction}
 
-The Introduction section, of referenced text\cite{Figueredo:2009dg} expands on the background of the work (some overlap with the Abstract is acceptable). The introduction should not include subheadings.
+Artificial Neural Networks (ANNs) are a firmly established state of the art method in machine learning. The artificial neuron converts an input tensor to an output tensor via a linear transformation combined with a nonlinear activation function. Due to this methodology, several state of the art machine learning architectures such as the Recurrent Neural Network (RNN) and Transformer have developed. A majority of the architectures developed from ANNs have drawn similarities from the field of neuroscience. However, despite the arrival of novel machine learning architectures, balancing specialization alongside multi-domain performance and efficiency has proven to be a major challenge of researchers within Machine Learning (ML). Thus, the SNN was proposed as a novel paradigm separate from ANNs. While ANNs utilize continuous-valued outputs, SNNs intend to utilize action potentials to convert an input tensor into an output tensor.
+The resulting architecture, while significantly improving the specialization and single-domain performance of neural networks, 
 
 \section*{Results}
 
