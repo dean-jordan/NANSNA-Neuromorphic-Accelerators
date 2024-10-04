@@ -9,7 +9,7 @@
 
 </p>
 
-<h3 align="center">NANSNA: Neuromorphic Accelerators with Novel Spiking Neural Subnetwork Ensemble-Based Architecture</h3>
+<h3 align="center">NANSNA: Neuromorphic Accelerators with Novel Spiking Neural Subnetwork Ensemble-Based Architecture<h3>
 
 NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromorphic Accelerator based on a novel Spiking Neural Network (SNN)-based architecture intended to improve multi-domain performance and specialization simultaneously.
 
@@ -91,10 +91,10 @@ The neuron directory contains the neurons used in the spiking networks.
 `residual_neuron_2.py`
 > Contains the second order recurrent leaky integrate-and-fire neuron.
 
-`subnetwork_neuron_1.py`
+`leaky_integrate_and_fire.py`
 > Contains the first type of neuron used within the residual subnetwork ensemble.
 
-`subnetwork_neuron_2.py`
+`recurrent_synaptic.py`
 > Contains the second type of neuron used within the residual subnetwork ensemble.
 
 #### Loss
