@@ -167,22 +167,63 @@ The subnetwork directory contains code to create a subnetwork ensemble between t
 > Groups multiple subnetworks together to create a full subnetwork ensemble.
 
 #### Testing
+The testing directory contains code to test parts of model architecture and full architecture through integration and unit testing.
+
+`full_architecture_test.py`
+> Fully tests the architecture in an "end-to-end" way.
+
+`encoder_integration_test.py`
+> Creates an integration test for the encoder, the same applies to decoder and subnetwork ensemble.
+
+`subnetwork_unit_test.py`
+> Creates a unit test for the subnetwork ensemble, the same applies to encoder and decoder.
 
 #### Adapters
+The adapters directory contains code for creating and using adapters. This creates a layer which loads adapters and the adapter code itself.
+
+`adapters.py`
+> Contains the full module for uiilizing adapters.
+
+`adapter_layer.py`
+Creates the layer for utilizing adapters.
 
 ### Models
+The models directory contains code for utilizing pre-trained models in ONNX, NIR, Torch, and Nengo formats.
+
+`checkpoints`
+> Allows for PyTorch checkpoints to be used.
+
+`NIR`
+> Contains the Neuromorphic Intermediate Representation (NIR) of the model.
+
+`ONNX`
+> Contains the ONNX serialization of the model.
 
 ### Documentation
+The documentation directory contains additional information on the model architecture, model, and neuromorphic accelerator. This contains the majority of information on the repository. For more information, see the `./docs` directory.
 
 ### Notebooks
+Contains notebooks with full code walkthroughs. Each notebook is numbered in order to provide an easy workflow. This allows for tutorials to be followed in a user-friendly manner.
 
 ### Reports
+Contains the final report which is to be published. This is written in TeX format and a TeX distribution is required in order to view the TeX-based code. The PDF copy is found in the `./reports` directory.
 
 ### References
+Within the reports directory, contains all citations to other papers used within the report.
 
 ### Training
+Training occurs within a custom training loop defined in the `./NANSNA/train.py` file. This can be adapted to any dataset to train a custom model using the architecture. This directory does not contain the full dataset, but the dataset used to train the model is open-access.
 
 ### Dependencies
+- Python 3.11.5
+    - torch
+    - matplotlib
+    - nengo
+    - nengo-dl
+    - nengo-gui
+    - snntorch
+    - numpy
+- TeX Distribution
 
 ### Directory Structure
 ```
