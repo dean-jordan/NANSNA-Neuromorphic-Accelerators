@@ -14,6 +14,7 @@
 <h4>NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromorphic Accelerator based on a novel Spiking Neural Network (SNN)-based architecture intended to improve multi-domain performance and specialization simultaneously.</h4>
 
 <h5>
+
 ---
 - [About](#About)
 - [Quickstart](#quickstart)
@@ -35,6 +36,7 @@
 - [Dependencies](#dependencies)
 - [Directory Structure](#directory-structure)
 ---
+
 </h5>
 
 ### About
