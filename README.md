@@ -9,10 +9,11 @@
 
 </p>
 
-<h3 align="center">NANSNA: Neuromorphic Accelerators with Novel Spiking Neural Subnetwork Ensemble-Based Architecture<h3>
+<h3 align="center">NANSNA: Neuromorphic Accelerators with Novel Spiking Neural Subnetwork Ensemble-Based Architecture</h3>
 
-NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromorphic Accelerator based on a novel Spiking Neural Network (SNN)-based architecture intended to improve multi-domain performance and specialization simultaneously.
+<h4>NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromorphic Accelerator based on a novel Spiking Neural Network (SNN)-based architecture intended to improve multi-domain performance and specialization simultaneously.</h4>
 
+<h5>
 ---
 - [About](#About)
 - [Quickstart](#quickstart)
@@ -34,6 +35,7 @@ NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromor
 - [Dependencies](#dependencies)
 - [Directory Structure](#directory-structure)
 ---
+</h5>
 
 ### About
 Neuromorphic computing is an industry which is experiencing a rapid onset. Initially, the introduction of the artificial neural network (ANN) introduced the idea of software algorithms inspired by neuroscience. While implementations of ANNs have seen vast applications in fields such as Natural Language Processing (NLP), language translation, and neuroimaging, there is an increasing demand for hardware algorithms which are more biologically plausible than ANNs. However, as of currently, the spiking neural network (SNN) that is utilized within neuromorphic computing has a high computational cost. In addition, SNNs excel at performing specific tasks, but are relatively unable to generalize to multi-domain tasks. As such, NANSNA proposes a novel neuromorphic accelerator, SNN-based model, and SNN architecture which contains more biological plausibility while incurring a lower computational cost and utilizing neurosymbolic programming to improve the performance in multi-domain and multimodal logical Vision and Language (VaL) tasks. The SNN utilizes an adapter-based training approach which is combined with a neural subnetwork ensemble to allow for specific domains to be utilized at once. This allows for on-the-fly specialization while additionally increasing parameter efficiency. An encoder-decoder architecture is used before and after the subnetwork ensemble to load adapters and process inputs through a muti-head attention mechanism. The resulting model outperforms current State of The Art (SOTA) methods in several key metrics.
