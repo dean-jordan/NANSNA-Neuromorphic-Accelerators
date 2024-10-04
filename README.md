@@ -36,12 +36,36 @@ NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromor
 ---
 
 ### About
-
 Neuromorphic computing is an industry which is experiencing a rapid onset. Initially, the introduction of the artificial neural network (ANN) introduced the idea of software algorithms inspired by neuroscience. While implementations of ANNs have seen vast applications in fields such as Natural Language Processing (NLP), language translation, and neuroimaging, there is an increasing demand for hardware algorithms which are more biologically plausible than ANNs. However, as of currently, the spiking neural network (SNN) that is utilized within neuromorphic computing has a high computational cost. In addition, SNNs excel at performing specific tasks, but are relatively unable to generalize to multi-domain tasks. As such, NANSNA proposes a novel neuromorphic accelerator, SNN-based model, and SNN architecture which contains more biological plausibility while incurring a lower computational cost and utilizing neurosymbolic programming to improve the performance in multi-domain and multimodal logical Vision and Language (VaL) tasks. The SNN utilizes an adapter-based training approach which is combined with a neural subnetwork ensemble to allow for specific domains to be utilized at once. This allows for on-the-fly specialization while additionally increasing parameter efficiency. An encoder-decoder architecture is used before and after the subnetwork ensemble to load adapters and process inputs through a muti-head attention mechanism. The resulting model outperforms current State of The Art (SOTA) methods in several key metrics.
 
 ### Quickstart
+Quickstart to install all prerequisites and allow for use of model architecture, schematics for neuromorphic accelerator, and use of SNN. Use the following scripts to install the repository.
+
+```bash
+# Install Repository
+git clone https://github.com/dean-jordan/NANSNA-Neuromorphic-Accelerators.git
+
+# Install Prerequisite Packages
+pip install -r requirements.txt
+
+# View/Modify Architecture
+cd ./NANSNA
+
+# View Neuromorphic Accelerator
+cd ./accelerator
+
+# Run SNN
+python ./NANSNA/NANSNA.py
+```
+Run all scripts from within root directory `NANSNA-Neuromorphic-Accelerators` for commands to utilize relative pathing and execute successfully.
+
+The NANSNA accelerator, architecture, and model were developed on Windows with Python v3.11.5 and Amazon Linux with Python v3.11.5.
+While Python 3.8 is the minimum requirement, the newest PyTorch-supported version is recommended for full compatibility.
 
 ### NANSNA Source
+The NANSNA network definition is found in the `./NANSNA` directory. Information regarding the SpiNNaker-based neuromorphic accelerator can be found in the `./accelerator` directory. Finally, an interactive script can be used to run the model. This is found in `./NANSNA.py`. Testing can be done through `./test.py`.
+
+Within the NANSNA directory, all files were used to develop the architecture. Key files within each directory will be described below, allowing one to browse through the architecture.
 
 #### Activation
 
