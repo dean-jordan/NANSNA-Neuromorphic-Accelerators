@@ -37,6 +37,8 @@ NANSNA improves the efficiency of Neuromorphic Computing by designing a Neuromor
 
 ### About
 
+Neuromorphic computing is an industry which is experiencing a rapid onset. Initially, the introduction of the artificial neural network (ANN) introduced the idea of software algorithms inspired by neuroscience. While implementations of ANNs have seen vast applications in fields such as Natural Language Processing (NLP), language translation, and neuroimaging, there is an increasing demand for hardware algorithms which are more biologically plausible than ANNs. However, as of currently, the spiking neural network (SNN) that is utilized within neuromorphic computing has a high computational cost. In addition, SNNs excel at performing specific tasks, but are relatively unable to generalize to multi-domain tasks. As such, NANSNA proposes a novel neuromorphic accelerator, SNN-based model, and SNN architecture which contains more biological plausibility while incurring a lower computational cost and utilizing neurosymbolic programming to improve the performance in multi-domain and multimodal logical Vision and Language (VaL) tasks. The resulting model outperforms current State of The Art (SOTA) methods in several key metrics.
+
 ### Quickstart
 
 ### NANSNA Source
