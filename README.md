@@ -68,18 +68,103 @@ The NANSNA network definition is found in the `./NANSNA` directory. Information 
 Within the NANSNA directory, all files were used to develop the architecture. Key files within each directory will be described below, allowing one to browse through the architecture.
 
 #### Activation
+The activation directory contains all activation functions which are used within NANSNA. This contains spiking and non-spiking activation functions.
+
+`relu.py`
+> Contains simple ReLU activation function. Used in feedforward networks in encoder and decoder.
+
+`softmax.py`
+> Contains softmax activation function for attention mechanism.
+
+`spiking_relu.py`
+> Contains spiking version of ReLU activation function for subnetwork ensemble.
 
 #### Neurons
+The neuron directory contains the neurons used in the spiking networks.
+
+`all_neuron_types.py`
+> Contains all four neuron types used within the network as a Python module.
+
+`residual_neuron_1.py`
+> Contains the first order recurrent leaky integrate-and-fire neuron.
+
+`residual_neuron_2.py`
+> Contains the second order recurrent leaky integrate-and-fire neuron.
+
+`subnetwork_neuron_1.py`
+> Contains the first type of neuron used within the residual subnetwork ensemble.
+
+`subnetwork_neuron_2.py`
+> Contains the second type of neuron used within the residual subnetwork ensemble.
 
 #### Loss
+The loss directory contains the novel loss function within the architecture and scripts to graph and test the loss function.
+
+`loss.py`
+> The custom loss function within NANSNA.
+
+`loss_test.py`
+> The script used to test the loss function for accuracy.
+
+`loss_graph.py`
+> The script used to use matplotlib to graph the loss function.
 
 #### Layers
+the layers directory contains every custom layer used within NANSNA. This is with the exception of simple layer types such as the nn.Linear() layer.
+
+`all_layer_types.py`
+> Contains every layer type packaged into a Python package for use within NANSNA.
+
+`integration_layer.py`
+> Contains the integration layer used to create neurosymbolic primitives.
+
+`encoder_recurrent.py`
+> Contains the non-spiking recurrent layer within the encoder. The same applies to the decoder.
+
+`symbolic_block.py`
+> While not a layer, this contains the full module for neurosymbolic programming primitives within the architecture.
+
+`adapter_subnetwork.py`
+> While also not a layer, contains the module for loading and using adapter-based learning within the subnetwork ensemble.
 
 #### Encoder
+The encoder directory contains code for creating the encoder blocks. These blocks are non-spiking and contain an attention mechanism, feedforward network, and have the ability to load adapters into the subnetwork ensemble. One adapter is used per subnetwork. In addition, the encoder processes symbolic primitives.
+
+`encoder.py`
+> Contains the full encoder block.
+
+`encoder_attention.py`
+> Contains the attention mechanism for within the encoder.
+
+`encoder_symbolic.py`
+> Implements the symbolic blocks within the encoder.
+
+`encoder_feedforward.py`
+> Processes input into low-level inputs and loads adapters into subnetwork ensemble.
 
 #### Decoder
+The decoder directory contains code for creating the decoder blocks. These work similarly to the encoder blocks. However, the feedforward network does not load adapters into the subnetwork ensemble.
+
+`decoder.py`
+> Contains full decoder block.
+
+`decoder_feedforward.py`
+> Processes low-level input back into output.
+
+`decoder_symbolic.py`
+> Fully processes symbolic outputs back into high-level features.
 
 #### Subnetwork
+The subnetwork directory contains code to create a subnetwork ensemble between the encoders and decoders.
+
+`subnetwork_block.py`
+> Groups multiple layers together to create ResNet-like identity blocks for creating subnetworks.
+
+`subnetwork.py`
+> Groups multiple blocks together to create a residual subnetwork.
+
+`subnetwork_ensemble.py`
+> Groups multiple subnetworks together to create a full subnetwork ensemble.
 
 #### Testing
 
